@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Saran</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsif.css">
+    <link rel="stylesheet" href="css/style-divisi.css">
+    <link rel="shortcut icon" href="assets/LogoHimaPSY.png" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/hover.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Font Untuk Nama -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="path/to/your/custom.css">
+
+    <style>
+        /* ************************************************** CONTENT ************************************************** */
+        #hero .navbar {
+            padding: 10px 20px 10px 20px;
+        }
+
+        #hero .banner {
+            padding: 100px 130px 100px 130px;
+        }
+
+        #hero .banner h2 {
+            font-family: "EB Garamond", serif;
+            font-weight: 700;
+            font-size: 35px;
+            font-style: normal;
+            color: #99090C;
+            text-align: center;
+        }
+
+        #hero .banner .box-title h1 {
+            font-family: "EB Garamond", serif;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #hero .banner .box-title p {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #hero .banner .box-form {
+            padding: 50px 0 50px 0;
+            background-color: #14363e;
+        }
+
+        #hero .banner .box {
+            padding: 0 100px 0 100px;
+        }
+
+        #hero .banner .box-form .btn {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: left;
+            color: black;
+            padding: 8px 40px 8px 40px;
+        }
+
+        #hero .banner .row-form {
+            padding: 0;
+        }
+
+        #hero .banner .row-whatsapp {
+            background-color: #14363e;
+        }
+
+        /* ************************************************** FOOTER ************************************************** */
+
+        footer {
+            padding: 100px 0 0 0;
+        }
+
+        footer img {
+            width: 109px;
+            height: 99px;
+            top: 31px;
+            left: 463px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        footer .icon .bi {
+            margin-left: 10px;
+            font-size: 35px;
+        }
+
+        footer .row .title h2 {
+            display: flex;
+            justify-content: center;
+            font-family: Poppins;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 37.5px;
+            text-align: left;
+        }
+
+        footer .row .logo .icon a,
+        footer .row .title a {
+            text-decoration: none;
+            color: black;
+            opacity: 0.8;
+        }
+
+        /* ************************************************** SMARTPHONE ************************************************** */
+        @media (max-width: 480px) {
+            #hero .banner {
+                padding: 0;
+            }
+
+            #hero .banner .box-title h1 {
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box-title p {
+                margin-top: -15px;
+                font-family: Poppins;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box {
+                padding: 0 20px 0 20px;
+            }
+
+            #hero .banner .box-form {
+                padding: 30px 0 30px 0;
+                background-color: #14363e;
+            }
+
+            #hero .banner .row-whatsapp {
+                background-color: #25d366;
+            }
+
+            #hero footer .title h2 {
+                display: flex;
+                justify-content: center;
+                font-family: Poppins;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 37.5px;
+                text-align: left;
+            }
+
+            #hero .navbar .collapse .navbar-nav {
+                text-align: end;
+            }
+
+            #hero .navbar .collapse .navbar-nav {
+                padding: 0;
+            }
+
+            footer {
+                padding: 100px 0 50px 0;
+            }
+        }
+
+        /* ************************************************** TABLET ************************************************** */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            #hero .banner {
+                padding: 50px 70px 50px 70px;
+            }
+
+            #hero .banner .box-title h1 {
+                font-family: Poppins;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box-title p {
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box {
+                padding: 0 50px 0 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section Start -->
+    <section id="hero">
+        <div class="container-fluid">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg bg-body-tranparant">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/logo.png" alt="Logo" width="50" height="45"
+                            class="d-inline-block align-text-top">
+                        <span>HIMA | Gizi</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navigasi-bar" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigasi-bar">
+                        <ul class="navbar-nav me-end mb-2 mb-lg-0 ">
+
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle hvr-underline-from-left" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Departemen
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="BPH.html">Badan Pengurus Harian</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="HR.html">Human Resource</a></li>
+                                    <li><a class="dropdown-item" href="SC.html">Social Concern</a></li>
+                                    <li><a class="dropdown-item" href="PR.html">Public Relation</a></li>
+                                    <li><a class="dropdown-item" href="ES.html">Education and Science</a></li>
+                                    <li><a class="dropdown-item" href="entre.html">Entrepreneurship</a></li>
+                                    <li><a class="dropdown-item" href="IC.html">Infomation & Communication</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="#footer">Kontak</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="saran.html">Saran</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Banner Start -->
+            <div class="container banner">
+                <div class="container">
+                    <!-- Database -->
+                    <!-- <div class="row align-items-center mt-5 mb-5 row-form">
+                        <div class="col-12 box-form rounded-4">
+                            <div class="row align-items-center box-title">
+                                <div class="col-lg-12">
+                                    <h1 class="text-center">
+                                        Form Penyampaian Kritik dan Saran
+                                    </h1>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="text-center">
+                                        Masukkan Kamu akan masuk didatabase kami dan segera kami
+                                        proses. Terimakasih
+                                    </p>
+                                </div>
+                            </div>
+                            <form class="row g-3 box mt-3" action="connection.php" method="post">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" id="ponsel" name="ponsel"
+                                        placeholder="Ponsel" />
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="number" class="form-control" id="nim" name="nim" placeholder="NIM" />
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Pesan" id="pesan" name="pesan"
+                                        style="height: 200px"></textarea>
+                                    <label for="floatingTextarea2"></label>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="submit" name="proses" class="btn btn-primary bg-light hvr-grow">
+                                        Kirim
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> -->
+
+                    <!-- Toast Notification -->
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <strong class="me-auto">Notifikasi</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Data Berhasil Tersimpan, Terimakasih Masukkannya
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <h2 style="text-align: center">Himpunan Mahasiswa Gizi</h2>
+                    <hr />
+
+                    <!-- Whatsapp -->
+                    <div class="row align-items-center mt-5 row-form">
+                        <div class="col-12 box-form rounded-4 row-whatsapp">
+                            <div class="row align-items-center box-title">
+                                <div class="col-lg-12">
+                                    <h1 class="text-center">Kirim ke Whatsapp Kami</h1>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="text-center">
+                                        Saran Kamu Langsung masuk di Whatsapp Kami
+                                    </p>
+                                </div>
+                            </div>
+                            <form class="row g-3 box mt-3" action="#" onsubmit="toWhatsapp(event)">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="nama2" name="nama2"
+                                        placeholder="Nama" />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" id="nim2" name="nim2" placeholder="NIM" />
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="pesan2" name="pesan2"
+                                        placeholder="Masukkan Pesan Anda" style="height: 200px"></textarea>
+                                    <label for="pesan"></label>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="submit" class="btn btn-primary bg-light hvr-grow">
+                                        Kirim
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Banner End -->
+
+            <button id="scrollToTopBtn" title="Go to top">
+                <i class="bi bi-arrow-up-short hvr-float"></i>
+            </button>
+
+            <!-- Footer Start  -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 title text-center" data-aos="fade-up" data-aos-duration="3000">
+                            <h3 class="mb-3 text-center">Kabinet Abhipraya
+                                Estungkara</h3>
+                            <!-- <i class="bi bi-telephone-fill hvr-float"></i> <a
+                                href="https://wa.me/62878-7284-4227">+62-878-7284-4227</a> <br> -->
+                            <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a
+                                href="mailto:himapsy.almaata@gmail.com">himagizi.almaata@gmail.com</a>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                                <div class="container icon">
+                                    <a href="https://www.instagram.com/himagi_almaata/"><i
+                                            class="bi bi-instagram hvr-float"></i></a>
+                                    <a href="https://x.com/himagialmaata"><i class="bi bi-twitter hvr-float"></i></a>
+                                    <a href="https://www.tiktok.com/@himagialmaata"><i
+                                            class="bi bi-tiktok hvr-float"></i></a>
+                                    <a href="https://www.youtube.com/@himagialmaataofficial7148"><i
+                                            class="bi bi-youtube hvr-float"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row p-3">
+                        <div class="col-12 text-center">
+                            <p>copyright &copy; 2024 HIMAGI UAA</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer Start  -->
+
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="js/script.js"></script>
+    <script>
+        /* ************************************************** Send Message Whatsapp ************************************************** */
+        function toWhatsapp(event) {
+            event.preventDefault(); // Mencegah form dari pengiriman default
+
+            const nama = document.getElementById("nama2").value;
+            const nim = document.getElementById("nim2").value;
+            const pesan = document.getElementById("pesan2").value;
+
+            // Debug: Menampilkan nilai di konsol untuk memastikan mereka diambil dengan benar
+            console.log("Nama:", nama);
+            console.log("NIM:", nim);
+            console.log("Pesan:", pesan);
+
+            const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, Nama saya ${nama}, dengan Nomor Induk Mahasiswa: ${nim}. Mohon maaf, menurut saya: ${pesan}`;
+
+            // Debug: Menampilkan URL di konsol untuk memastikan URL benar
+            console.log("URL to Whatsapp:", urlToWhatsapp);
+
+            // Membuka URL di tab baru
+            window.open(urlToWhatsapp, "_blank");
+        }
+
+        /* ************************************************** Notification ************************************************** */
+        document.addEventListener('DOMContentLoaded', function () {
+            const toastEl = document.getElementById('liveToast');
+            const toast = new bootstrap.Toast(toastEl);
+
+            // Event listener for form submission
+            const form = document.querySelector('form[action="koneksi.php"]');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Mencegah form dari pengiriman default
+
+                const formData = new FormData(form);
+                fetch('koneksi.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        // Menampilkan toast notifikasi
+                        toast.show();
+
+                        // Clear form fields after submission
+                        form.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>

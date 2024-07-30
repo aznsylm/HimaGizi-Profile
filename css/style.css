@@ -1,0 +1,476 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+#scrollToTopBtn {
+    display: none;
+    /* Disembunyikan secara default */
+    position: fixed;
+    /* Posisi tetap di kanan bawah */
+    bottom: 20px;
+    /* Jarak dari bawah */
+    right: 50px;
+    /* Jarak dari kanan */
+    z-index: 99;
+    /* Pastikan tombol berada di atas konten lainnya */
+    font-size: 20px;
+    /* Ukuran font */
+    border: none;
+    /* Tanpa border */
+    outline: none;
+    /* Tanpa outline */
+    background-color: #DAAA0F;
+    /* Warna background */
+    color: white;
+    /* Warna teks */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer */
+    padding: 10px 15px;
+    /* Padding */
+    border-radius: 50%;
+    /* Membuat tombol bulat */
+    transition: opacity 0.3s;
+    /* Transisi untuk efek kemunculan */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #99090C;
+}
+
+#hero {
+    margin: 0;
+    padding: 0;
+}
+
+#hero .container-fluid {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#hero .container-fluid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/hero/BG\ HERO.png');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+    /* Ensures the pseudo-element is behind the content */
+}
+
+#hero .navbar {
+    padding: 10px 20px 10px 20px;
+}
+
+#hero .navbar .navbar-brand span {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 22.5px;
+    text-align: left;
+    margin-left: 10px;
+    color: #99090C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero .navbar .collapse .navbar-nav {
+    padding: 1rem;
+}
+
+#hero .navbar .collapse .nav-link {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: left;
+}
+
+#hero .navbar .collapse .nav-link {
+    margin-right: 20px;
+    font-weight: 700;
+    color: #99090C;
+}
+
+#hero .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+#hero .banner {
+    padding: 100px 0 100px 0;
+}
+
+#hero .title h1, #hero .title .title-welcome, #hero .title .title-AlmaAta {
+    span {
+        width: 100%;
+        float: left;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        transform: translateY(-50px);
+        opacity: 0;
+        animation-name: titleAnimation;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+#hero .title h1 span {
+    animation-delay: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+
+    &:first-child {
+        animation-delay: 0.7s;
+    }
+
+    &:last-child {
+        animation-delay: 0.5s;
+    }
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    }
+
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+
+    }
+}
+
+#hero .title h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 67.5px;
+    font-style: normal;
+    padding: 0 50px 0 0;
+    color: #99090C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero .title .title-welcome {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 37.5px;
+    font-style: normal;
+    color: #DAAA0F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero .title .title-AlmaAta {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+    font-style: normal;
+    color: #99090C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero .btn-banner {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    font-style: normal;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    background-color: #99090C;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#tentang-kami {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(232, 188, 180, 0.5), rgba(232, 188, 180, 1));
+}
+
+#tentang-kami::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/tentangKami/BG_TENTANG_KAMI.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.container-fluid.tentang {
+    position: relative;
+    z-index: 1;
+}
+
+
+#hero .btn-banner a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#tentang-kami .btn-group a {
+    background-color: #99090C;
+}
+
+#tentang-kami .container-fluid {
+    padding: 20px;
+}
+
+#tentang-kami .tentang, #c .Kerja {
+    padding: 100px 0 100px 0;
+}
+
+#tentang-kami .tentang h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: normal;
+    color: #99090C;
+}
+
+#tentang-kami .tentang .image-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tentang-kami .tentang .title-box {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    padding: 0 50px 0 0;
+}
+
+#tentang-kami .tentang .describe {
+    margin-top: 100px;
+}
+
+/* title styles */
+#tentang-kami span {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+#tentang-kami span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #99090C;
+    animation: a-ltr-after 2s cubic-bezier(.77, 0, .18, 1) forwards;
+    transform: translateX(-101%);
+}
+
+#tentang-kami span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: a-ltr-before 2s cubic-bezier(.77, 0, .18, 1) forwards;
+    transform: translateX(0);
+}
+
+#tentang-kami span:nth-of-type(1)::before,
+#tentang-kami span:nth-of-type(1)::after {
+    animation-delay: 1s;
+}
+
+#tentang-kami span:nth-of-type(2)::before,
+#tentang-kami span:nth-of-type(2)::after {
+    animation-delay: 2.5s;
+}
+
+@keyframes a-ltr-after {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(101%)
+    }
+}
+
+@keyframes a-ltr-before {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(200%)
+    }
+}
+
+#tentang-kami .tentang .visimisi {
+    margin-top: 100px;
+}
+
+#tentang-kami .tentang .card,
+#program .Kerja .card {
+    background-image: url(../assets/almaata.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tentang-kami .tentang .card:hover,
+#program .Kerja .card:hover {
+    opacity: 0.5;
+}
+
+#tentang-kami .tentang .card .card-text,
+#program .Kerja .card .card-text {
+    color: #fff;
+}
+
+#tentang-kami .tentang .card-body,
+#program .Kerja .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tentang-kami .tentang .card-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    font-style: normal;
+}
+
+#program {
+    background-color: #FFF6E6;
+}
+
+#pengurusInti {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#pengurusInti::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/strukturOrganisasi/BG_STRUKTUR\ ORGANISASI.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(2px);
+    /* Mengatur tingkat blur */
+    z-index: -1;
+}
+
+.container.pengurus {
+    position: relative;
+    z-index: 1;
+}
+
+#pengurusInti .pengurus {
+    padding: 100px 0 100px 0;
+}
+
+#pengurusInti .pengurus .slide {
+    margin-top: 100px;
+}
+
+#program .Kerja .card-text {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#program .Kerja .card-text span {
+    display: block;
+}
+
+#divisi {
+    background-color: #FFF6E6;
+}
+
+#divisi .container {
+    padding: 100px 0 100px 0;
+}
+
+#divisi .container figcaption {
+    margin: -50px 10px 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+    width: 100%;
+    color: #99090C;
+}
+
+#divisi .container figcaption span {
+    font-weight: 400;
+    font-size: 35px;
+    color: #DAAA0F;
+}
+
+#footer {
+    padding: 100px 0 50px 0;
+    background-color: #FFF6E6;
+}
+
+#footer .icon .bi {
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+#footer .row .title h3 {
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    color: #99090C;
+}
+
+#footer .row .logo .icon a,
+#footer .row .title a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
