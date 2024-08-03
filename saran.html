@@ -8,8 +8,8 @@
 
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsif.css">
-    <link rel="stylesheet" href="css/style-divisi.css">
+    <!-- <link rel="stylesheet" href="css/responsif.css"> -->
+    <!-- <link rel="stylesheet" href="css/style-divisi.css"> -->
     <link rel="shortcut icon" href="assets/LogoHimaPSY.png" type="image/x-icon">
 
     <!-- bootstrap -->
@@ -98,11 +98,11 @@
 
         #hero .banner .box-form .btn {
             font-family: Poppins;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             line-height: 30px;
-            text-align: left;
-            color: black;
+            text-align: center;
+            color: #99090C;
             padding: 8px 40px 8px 40px;
         }
 
@@ -111,13 +111,15 @@
         }
 
         #hero .banner .row-whatsapp {
-            background-color: #14363e;
+            background-color: #99090C;
+            opacity: 0.9;
         }
 
         /* ************************************************** FOOTER ************************************************** */
 
-        footer {
+        #footer {
             padding: 100px 0 0 0;
+            background-color: transparent;
         }
 
         footer img {
@@ -186,7 +188,8 @@
             }
 
             #hero .banner .row-whatsapp {
-                background-color: #25d366;
+                background-color: #99090C;
+                opacity: 0.9;
             }
 
             #hero footer .title h2 {
@@ -207,8 +210,10 @@
                 padding: 0;
             }
 
+
             footer {
                 padding: 100px 0 50px 0;
+                background-color: transparent;
             }
         }
 
@@ -373,18 +378,18 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <p class="text-center">
-                                        Saran Kamu Langsung masuk di Whatsapp Kami
+                                        Saran Kamu Langsung terhubung ke Whatsapp Kami
                                     </p>
                                 </div>
                             </div>
                             <form class="row g-3 box mt-3" action="#" onsubmit="toWhatsapp(event)">
-                                <div class="col-md-6">
+                                <div class="col-12">
                                     <input type="text" class="form-control" id="nama2" name="nama2"
                                         placeholder="Nama" />
                                 </div>
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
                                     <input type="number" class="form-control" id="nim2" name="nim2" placeholder="NIM" />
-                                </div>
+                                </div> -->
                                 <div class="form-floating">
                                     <textarea class="form-control" id="pesan2" name="pesan2"
                                         placeholder="Masukkan Pesan Anda" style="height: 200px"></textarea>
@@ -411,11 +416,11 @@
             <footer id="footer">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-12 title text-center" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="col-12 title text-center">
                             <h3 class="mb-3 text-center">Kabinet Abhipraya
                                 Estungkara</h3>
-                            <!-- <i class="bi bi-telephone-fill hvr-float"></i> <a
-                                href="https://wa.me/62878-7284-4227">+62-878-7284-4227</a> <br> -->
+                            <i class="bi bi-telephone-fill hvr-float"></i> <a
+                                href="https://wa.me/62858-6096-4536">+62-858-6096-4536</a> <br>
                             <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a
                                 href="mailto:himapsy.almaata@gmail.com">himagizi.almaata@gmail.com</a>
                             <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
@@ -434,8 +439,9 @@
                     </div>
                     <hr>
                     <div class="row p-3">
-                        <div class="col-12 text-center">
-                            <p>copyright &copy; 2024 HIMAGI UAA</p>
+                        <div class="col-12 text-center copyright">
+                            <p>&copy; 2024 HIMAGI UAA | Developer <a href="https://www.instagram.com/zansylm/">Aizan
+                                    Syalim</a></p>
                         </div>
                     </div>
                 </div>
@@ -457,15 +463,14 @@
             event.preventDefault(); // Mencegah form dari pengiriman default
 
             const nama = document.getElementById("nama2").value;
-            const nim = document.getElementById("nim2").value;
+            // const nim = document.getElementById("nim2").value;
             const pesan = document.getElementById("pesan2").value;
 
             // Debug: Menampilkan nilai di konsol untuk memastikan mereka diambil dengan benar
             console.log("Nama:", nama);
-            console.log("NIM:", nim);
             console.log("Pesan:", pesan);
 
-            const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, Nama saya ${nama}, dengan Nomor Induk Mahasiswa: ${nim}. Mohon maaf, menurut saya: ${pesan}`;
+            const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo kak, Nama aku ${nama}, Mohon maaf, aku ingin menyampaikan : ${pesan}`;
 
             // Debug: Menampilkan URL di konsol untuk memastikan URL benar
             console.log("URL to Whatsapp:", urlToWhatsapp);

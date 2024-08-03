@@ -44,7 +44,6 @@
 #hero .container-fluid {
     position: relative;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -250,10 +249,10 @@
     padding: 100px 0 100px 0;
 }
 
-#tentang-kami .tentang h1 {
-    font-family: "Poppins", sans-serif;
+#tentang-kami .tentang h1, #pengurusInti .title h1, #footer h3 {
+    font-family: "EB Garamond", serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
     font-style: normal;
     color: #99090C;
 }
@@ -457,20 +456,25 @@
     font-size: 35px;
 }
 
-#footer .row .title h3 {
-    display: flex;
-    justify-content: center;
-    font-family: Poppins;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 37.5px;
-    text-align: left;
-    color: #99090C;
-}
-
 #footer .row .logo .icon a,
 #footer .row .title a {
     text-decoration: none;
     color: black;
     opacity: 0.8;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+#footer .row .copyright {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#footer .row .copyright a {
+    text-decoration: none;
 }

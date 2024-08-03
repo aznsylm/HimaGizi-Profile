@@ -6,16 +6,6 @@
     padding: 0 200px 0 200px;
 }
 
-#hero .banner .box-title h1 {
-    margin-top: 50px;
-    font-family: Poppins;
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 52.5px;
-    text-align: left;
-    color: #99090C;
-}
-
 #hero .banner .box-title p {
     font-family: Poppins;
     font-size: 20px;
@@ -57,12 +47,14 @@
 }
 
 #hero .banner .box-title h1, #program .Kerja h1, #pengurusInti .title h1 {
-    font-family: "Poppins", sans-serif;
+    font-family: "EB Garamond", serif;
     font-weight: 700;
     font-size: 35px;
     font-style: normal;
     color: #99090C;
     text-align: center;
+    margin-top: 50px;
+
 }
 
 #hero .banner .describe p {
@@ -123,7 +115,7 @@
 @media (max-width: 480px) {
 
     #hero .banner .box-title h1, #program .Kerja h1, #pengurusInti .title h1 {
-        font-family: "Poppins", sans-serif;
+        font-family: "EB Garamond", serif;
         font-weight: 700;
         font-size: 30px;
         font-style: normal;
