@@ -8,8 +8,6 @@
 
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsif.css"> -->
-    <!-- <link rel="stylesheet" href="css/style-divisi.css"> -->
     <link rel="shortcut icon" href="assets/LogoHimaPSY.png" type="image/x-icon">
 
     <!-- bootstrap -->
@@ -118,7 +116,6 @@
         /* ************************************************** FOOTER ************************************************** */
 
         #footer {
-            padding: 100px 0 0 0;
             background-color: transparent;
         }
 
@@ -131,11 +128,6 @@
             opacity: 0px;
         }
 
-        footer .icon .bi {
-            margin-left: 10px;
-            font-size: 35px;
-        }
-
         footer .row .title h2 {
             display: flex;
             justify-content: center;
@@ -144,13 +136,6 @@
             font-weight: 600;
             line-height: 37.5px;
             text-align: left;
-        }
-
-        footer .row .logo .icon a,
-        footer .row .title a {
-            text-decoration: none;
-            color: black;
-            opacity: 0.8;
         }
 
         /* ************************************************** SMARTPHONE ************************************************** */
@@ -310,60 +295,6 @@
             <!-- Banner Start -->
             <div class="container banner">
                 <div class="container">
-                    <!-- Database -->
-                    <!-- <div class="row align-items-center mt-5 mb-5 row-form">
-                        <div class="col-12 box-form rounded-4">
-                            <div class="row align-items-center box-title">
-                                <div class="col-lg-12">
-                                    <h1 class="text-center">
-                                        Form Penyampaian Kritik dan Saran
-                                    </h1>
-                                </div>
-                                <div class="col-lg-12">
-                                    <p class="text-center">
-                                        Masukkan Kamu akan masuk didatabase kami dan segera kami
-                                        proses. Terimakasih
-                                    </p>
-                                </div>
-                            </div>
-                            <form class="row g-3 box mt-3" action="connection.php" method="post">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" />
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="number" class="form-control" id="ponsel" name="ponsel"
-                                        placeholder="Ponsel" />
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="number" class="form-control" id="nim" name="nim" placeholder="NIM" />
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Pesan" id="pesan" name="pesan"
-                                        style="height: 200px"></textarea>
-                                    <label for="floatingTextarea2"></label>
-                                </div>
-                                <div class="col-12 text-center mt-5">
-                                    <button type="submit" name="proses" class="btn btn-primary bg-light hvr-grow">
-                                        Kirim
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div> -->
-
-                    <!-- Toast Notification -->
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                            <div class="toast-header">
-                                <strong class="me-auto">Notifikasi</strong>
-                                <button type="button" class="btn-close" data-bs-dismiss="toast"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="toast-body">
-                                Data Berhasil Tersimpan, Terimakasih Masukkannya
-                            </div>
-                        </div>
-                    </div>
 
                     <hr />
                     <h2 style="text-align: center">Himpunan Mahasiswa Gizi</h2>
@@ -387,13 +318,10 @@
                                     <input type="text" class="form-control" id="nama2" name="nama2"
                                         placeholder="Nama" />
                                 </div>
-                                <!-- <div class="col-md-6">
-                                    <input type="number" class="form-control" id="nim2" name="nim2" placeholder="NIM" />
-                                </div> -->
                                 <div class="form-floating">
                                     <textarea class="form-control" id="pesan2" name="pesan2"
                                         placeholder="Masukkan Pesan Anda" style="height: 200px"></textarea>
-                                    <label for="pesan"></label>
+                                    <label for="pesan2">Masukkan Pesan Anda</label>
                                 </div>
                                 <div class="col-12 text-center mt-5">
                                     <button type="submit" class="btn btn-primary bg-light hvr-grow">
@@ -420,9 +348,9 @@
                             <h3 class="mb-3 text-center">Kabinet Abhipraya
                                 Estungkara</h3>
                             <i class="bi bi-telephone-fill hvr-float"></i> <a
-                                href="https://wa.me/62858-6096-4536">+62-858-6096-4536</a> <br>
+                                href="https://wa.me/6281617008113">+62-816-1700-8113</a> <br>
                             <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a
-                                href="mailto:himapsy.almaata@gmail.com">himagizi.almaata@gmail.com</a>
+                                href="mailto:himagizi.almaata@gmail.com">himagizi.almaata@gmail.com</a>
                             <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
                                 <div class="container icon">
                                     <a href="https://www.instagram.com/himagi_almaata/"><i
@@ -457,56 +385,39 @@
 
     <!-- Initialize Swiper -->
     <script src="js/script.js"></script>
+
     <script>
         /* ************************************************** Send Message Whatsapp ************************************************** */
         function toWhatsapp(event) {
             event.preventDefault(); // Mencegah form dari pengiriman default
 
-            const nama = document.getElementById("nama2").value;
-            // const nim = document.getElementById("nim2").value;
-            const pesan = document.getElementById("pesan2").value;
+            const nama = document.getElementById("nama2").value.trim();
+            const pesan = document.getElementById("pesan2").value.trim();
+
+            // Validasi untuk memastikan nama dan pesan tidak kosong
+            if (nama === "" || pesan === "") {
+                alert("Mohon isi nama dan pesan sebelum mengirim.");
+                return;
+            }
 
             // Debug: Menampilkan nilai di konsol untuk memastikan mereka diambil dengan benar
             console.log("Nama:", nama);
             console.log("Pesan:", pesan);
 
-            const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo kak, Nama aku ${nama}, Mohon maaf, aku ingin menyampaikan : ${pesan}`;
+            const urlToWhatsapp = `https://wa.me/6281617008113?text=Halo kak, Nama aku ${nama}, Mohon maaf, aku ingin menyampaikan : ${pesan}`;
 
             // Debug: Menampilkan URL di konsol untuk memastikan URL benar
             console.log("URL to Whatsapp:", urlToWhatsapp);
 
             // Membuka URL di tab baru
             window.open(urlToWhatsapp, "_blank");
+
+            // Menampilkan notifikasi setelah membuka URL
+            alert("Pesan Anda telah dikirim ke Whatsapp Kami!");
         }
 
-        /* ************************************************** Notification ************************************************** */
-        document.addEventListener('DOMContentLoaded', function () {
-            const toastEl = document.getElementById('liveToast');
-            const toast = new bootstrap.Toast(toastEl);
 
-            // Event listener for form submission
-            const form = document.querySelector('form[action="koneksi.php"]');
-            form.addEventListener('submit', function (event) {
-                event.preventDefault(); // Mencegah form dari pengiriman default
 
-                const formData = new FormData(form);
-                fetch('koneksi.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                    .then(response => response.text())
-                    .then(data => {
-                        // Menampilkan toast notifikasi
-                        toast.show();
-
-                        // Clear form fields after submission
-                        form.reset();
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
-            });
-        });
     </script>
 </body>
 

@@ -1,317 +1,329 @@
-#hero .navbar {
-    padding: 10px 20px 10px 20px;
-}
+        #hero .navbar {
+            padding: 10px 20px 10px 20px;
+        }
 
-#hero .banner .box-title {
-    padding: 0 200px 0 200px;
-}
+        #hero .banner {
+            padding: 100px 130px 100px 130px;
+        }
 
-#hero .banner .box-title p {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    text-align: justify;
-}
+        #hero .banner .box-title {
+            padding: 0 200px 0 200px;
+        }
 
-#hero .navbar .collapse .navbar-nav {
-    text-align: end;
-}
+        #hero .banner .box-title p {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            text-align: justify;
+        }
 
-#hero .navbar .collapse .navbar-nav {
-    padding: 0;
-}
+        #hero .navbar .collapse .navbar-nav {
+            text-align: end;
+        }
 
-#hero .banner .mySwiper .swiper-wrapper {
-    margin-right: 20px;
-}
+        #hero .navbar .collapse .navbar-nav {
+            padding: 0;
+        }
 
-#program .Kerja .visimisi {
-    margin-top: 100px;
-    padding: 0;
-}
+        #hero .banner .ukuran {
+            max-height: 700px;
+        }
 
-/* ************************************************** DIVISI ************************************************** */
-#hero .banner {
-    padding: 20px 0 20px 0;
-    height: 100vh;
-}
+        #program .Kerja .visimisi {
+            margin-top: 100px;
+            padding: 0;
+        }
 
-#hero .banner .box-title {
-    padding: 0;
-}
+        /* ************************************************** DIVISI ************************************************** */
+        #hero .banner {
+            padding: 20px 0 20px 0;
+            /* height: 100vh; */
+        }
 
-#program .Kerja {
-    padding: 100px 0 100px 0;
-}
+        #hero .banner .box-title {
+            padding: 0;
+        }
 
-#hero .banner .box-title h1, #program .Kerja h1, #pengurusInti .title h1 {
-    font-family: "EB Garamond", serif;
-    font-weight: 700;
-    font-size: 35px;
-    font-style: normal;
-    color: #99090C;
-    text-align: center;
-    margin-top: 50px;
+        #program .Kerja {
+            padding: 100px 0 100px 0;
+        }
 
-}
+        #hero .banner .box-title h1, #program .Kerja h1, #pengurusInti .title h1 {
+            font-family: "EB Garamond", serif;
+            font-weight: 700;
+            font-size: 35px;
+            font-style: normal;
+            color: #99090C;
+            text-align: center;
+            margin-top: 50px;
 
-#hero .banner .describe p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    font-style: normal;
-    color: #0000006c;
-    text-align: center;
-}
+        }
 
-#hero .banner .swiper .card-title {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-}
+        #hero .banner .describe p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 25px;
+            font-style: normal;
+            color: #0000006c;
+            text-align: center;
+        }
 
-/* ************************************************** FOOTER ************************************************** */
+        #hero .banner .swiper .card-title {
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
 
-#footer {
-    padding: 100px 0 0 0;
-}
+        /* ************************************************** FOOTER ************************************************** */
 
-#footer img {
-    width: 109px;
-    height: 99px;
-    top: 31px;
-    left: 463px;
-    gap: 0px;
-    opacity: 0px;
-}
+        #footer {
+            padding: 100px 0 0 0;
+        }
 
-#footer .icon .bi {
-    margin-left: 10px;
-    font-size: 35px;
-}
+        #footer img {
+            width: 109px;
+            height: 99px;
+            top: 31px;
+            left: 463px;
+            gap: 0px;
+            opacity: 0px;
+        }
 
-#footer .row .title h2 {
-    display: flex;
-    justify-content: center;
-    font-family: Poppins;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 37.5px;
-    text-align: left;
-}
+        #footer .icon .bi {
+            margin-left: 10px;
+            font-size: 35px;
+        }
 
-#footer .row .logo .icon a,
-#footer .row .title a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.8;
-}
+        #footer .row .title h2 {
+            display: flex;
+            justify-content: center;
+            font-family: Poppins;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 37.5px;
+            text-align: left;
+        }
 
-/* ************************************************** Responsif ************************************************** */
+        #footer .row .logo .icon a,
+        #footer .row .title a {
+            text-decoration: none;
+            color: black;
+            opacity: 0.8;
+        }
 
-@media (max-width: 480px) {
+        /* ************************************************** Responsif ************************************************** */
 
-    #hero .banner .box-title h1, #program .Kerja h1, #pengurusInti .title h1 {
-        font-family: "EB Garamond", serif;
-        font-weight: 700;
-        font-size: 30px;
-        font-style: normal;
-        color: #99090C;
-        text-align: center;
-    }
+        @media (max-width: 480px) {
 
-    #hero .banner .box-title p {
-        font-family: Poppins;
-        font-size: 15px;
-        font-weight: 400;
-        text-align: center;
-    }
+            #hero .banner .box-title h1, #program .Kerja h1, #pengurusInti .title h1 {
+                font-family: "EB Garamond", serif;
+                font-weight: 700;
+                font-size: 35px;
+                font-style: normal;
+                color: #99090C;
+                text-align: center;
+            }
 
-    #hero .banner {
-        padding: 1rem 0 1rem 0;
-    }
+            #hero .banner .box-title p {
+                font-family: Poppins;
+                font-size: 15px;
+                font-weight: 400;
+                text-align: center;
+            }
 
-    #hero .banner .row-form {
-        margin-top: 0 !important;
-    }
+            #hero .banner {
+                padding: 1rem 0 1rem 0;
+            }
 
-    #hero .banner .box-title {
-        text-align: start;
-    }
+            #hero .banner .describe p {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                font-style: normal;
+                color: #0000006c;
+            }
 
-    #program .Kerja .col-sm-12 {
-        padding: 1rem 30px 1rem 30px;
-    }
+            #hero .banner .row-form {
+                margin-top: 0 !important;
+            }
 
-    #program .Kerja .visimisi {
-        margin-top: 0;
-        padding: 0;
-    }
+            #hero .banner .box-title {
+                text-align: start;
+            }
 
-    #program .Kerja .jarak {
-        margin-top: 100px;
-    }
+            #program .Kerja .col-sm-12 {
+                padding: 1rem 30px 1rem 30px;
+            }
 
-    #footer {
-        padding: 0 0 50px 0;
-    }
+            #program .Kerja .visimisi {
+                margin-top: 0;
+                padding: 0;
+            }
 
-    .center-card {
-        display: flex;
-        justify-content: center;
-    }
-}
+            #program .Kerja .jarak {
+                margin-top: 100px;
+            }
 
-/* ************************************************** Modal Image ************************************************** */
-/* Gaya Umum untuk Judul di atas Gambar */
-.image-title {
-    position: absolute;
-    top: 10px;
-    /* Center secara horizontal */
-    left: 50%;
-    transform: translateX(-50%);
-    /*  */
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    /* Padding di sekitar teks */
-    padding: 5px 15px;
-    /*  */
-    border-radius: 5px;
-    font-size: 16px;
-    /* Ukuran font */
-    font-weight: bold;
-    /* Teks tebal */
-    text-align: left;
-    /* Teks rata tengah */
-    z-index: 10;
-    /* Pastikan di atas gambar */
-    max-width: 90%;
-    /* Menghindari teks terlalu panjang */
-    word-wrap: break-word;
-    /* Memecah teks panjang jika perlu */
-}
+            #footer {
+                padding: 0 0 50px 0;
+            }
 
-/* Style the Image Used to Trigger the Modal */
-.modal-trigger {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+            .center-card {
+                display: flex;
+                justify-content: center;
+            }
+        }
 
-.modal-trigger:hover {
-    opacity: 0.7;
-}
+        /* ************************************************** Modal Image ************************************************** */
+        /* Gaya Umum untuk Judul di atas Gambar */
+        .image-title {
+            position: absolute;
+            top: 10px;
+            /* Center secara horizontal */
+            left: 50%;
+            transform: translateX(-50%);
+            /*  */
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            /* Padding di sekitar teks */
+            padding: 5px 15px;
+            /*  */
+            border-radius: 5px;
+            font-size: 16px;
+            /* Ukuran font */
+            font-weight: bold;
+            /* Teks tebal */
+            text-align: left;
+            /* Teks rata tengah */
+            z-index: 10;
+            /* Pastikan di atas gambar */
+            max-width: 90%;
+            /* Menghindari teks terlalu panjang */
+            word-wrap: break-word;
+            /* Memecah teks panjang jika perlu */
+        }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
-}
+        /* Style the Image Used to Trigger the Modal */
+        .modal-trigger {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
+        .modal-trigger:hover {
+            opacity: 0.7;
+        }
 
-.caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
 
-/* Add Animation - Zoom in the Modal */
-@keyframes zoom {
-    from {
-        transform: scale(0);
-    }
+        /* Modal Content (Image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
 
-    to {
-        transform: scale(1);
-    }
-}
+        .caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
 
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+        /* Add Animation - Zoom in the Modal */
+        @keyframes zoom {
+            from {
+                transform: scale(0);
+            }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
+            to {
+                transform: scale(1);
+            }
+        }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 768px) {
-    .modal-content {
-        width: 90%;
-    }
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    .caption {
-        font-size: 14px;
-        height: auto;
-    }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-    .image-title {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+            }
 
-    .modal-trigger {
-        width: 90%;
-    }
-}
+            .caption {
+                font-size: 14px;
+                height: auto;
+            }
 
-/* Responsif - Menyesuaikan ukuran font dan padding pada layar ponsel */
-@media only screen and (max-width: 480px) {
-    .modal-content {
-        width: 95%;
-    }
+            .image-title {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
 
-    .caption {
-        font-size: 12px;
-        height: auto;
-    }
+            .modal-trigger {
+                width: 90%;
+            }
+        }
 
-    .image-title {
-        font-size: 14px;
-        padding: 6px 10px;
-        margin-right: 20px;
-    }
+        /* Responsif - Menyesuaikan ukuran font dan padding pada layar ponsel */
+        @media only screen and (max-width: 480px) {
+            .modal-content {
+                width: 95%;
+            }
 
-    .modal-trigger {
-        width: 95%;
-        padding: 20px;
-    }
-}
+            .caption {
+                font-size: 12px;
+                height: auto;
+            }
+
+            .image-title {
+                font-size: 14px;
+                padding: 6px 10px;
+                margin-right: 20px;
+            }
+
+            .modal-trigger {
+                width: 95%;
+                padding: 20px;
+            }
+        }
