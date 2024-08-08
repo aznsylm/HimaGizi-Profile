@@ -102,7 +102,7 @@
 }
 
 #hero .banner {
-    padding: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
 }
 
 #hero .title h1, #hero .title .title-welcome, #hero .title .title-AlmaAta {
@@ -408,6 +408,11 @@
 
 #pengurusInti .pengurus .slide {
     margin-top: 100px;
+}
+
+#pengurusInti .pengurus .slide .card {
+    width: 18rem;
+    border: none;
 }
 
 #program .Kerja .card-text {

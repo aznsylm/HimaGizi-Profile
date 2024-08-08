@@ -31,6 +31,10 @@
             max-height: 700px;
         }
 
+        #hero .banner .swiper .card {
+            border: none;
+        }
+
         #program .Kerja .visimisi {
             margin-top: 100px;
             padding: 0;
@@ -146,6 +150,13 @@
                 color: #0000006c;
             }
 
+            #hero .banner .swiper .card {
+                display: flex;
+                width: auto;
+                border: none;
+                align-items: center;
+            }
+
             #hero .banner .row-form {
                 margin-top: 0 !important;
             }
@@ -174,6 +185,12 @@
             .center-card {
                 display: flex;
                 justify-content: center;
+            }
+        }
+
+        @media (min-width: 489px) and (max-width: 768px) {
+            #hero .banner .swiper .card {
+                border: none;
             }
         }
 
